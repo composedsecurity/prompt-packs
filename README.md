@@ -1,7 +1,5 @@
 # Prompt Packs
 
-> The security prompts from the [Composed Security blog](https://composedsecurity.com/blog), kept here as copy-paste files. Every prompt links back to the post that explains the real-world failure it defends against.
-
 Battle-tested security prompts and detection commands for teams building software with AI coding agents.
 
 Every prompt in this repo is engineered for an agent: explicit scope, regex patterns, output format specs, and edge-case handling. They come from the write-ups on the [Composed Security blog](https://composedsecurity.com/blog), where each one ships with the story of the real-world failure it defends against.
@@ -31,7 +29,7 @@ Read the guide: **[10 Copy-Paste Security Prompts for Your AI Agent](https://com
 
 ## All prompts by category
 
-### Secrets & Env Vars
+### [Secrets & Env Vars](prompts/secrets/README.md)
 
 Find, move, and permanently scrub credentials.
 
@@ -41,7 +39,7 @@ Find, move, and permanently scrub credentials.
 | [Move hardcoded secrets into environment variables](prompts/secrets/migrate-secrets-to-env.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 | [Scrub a leaked secret from git history](prompts/secrets/scrub-secrets-from-git-history.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 
-### Database
+### [Database](prompts/database/README.md)
 
 Row Level Security and data-access guardrails.
 
@@ -49,7 +47,7 @@ Row Level Security and data-access guardrails.
 |---|---|---|
 | [Add Row Level Security to every Supabase table](prompts/database/add-supabase-rls.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 
-### Authentication & Access Control
+### [Authentication & Access Control](prompts/authentication/README.md)
 
 Audit logins and move authorization server-side.
 
@@ -58,7 +56,7 @@ Audit logins and move authorization server-side.
 | [Audit an authentication flow](prompts/authentication/audit-auth-flow.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 | [Find frontend-only access controls](prompts/authentication/audit-frontend-only-authz.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 
-### API Hardening
+### [API Hardening](prompts/api-hardening/README.md)
 
 Rate limits, input validation, and payment webhooks.
 
@@ -68,7 +66,7 @@ Rate limits, input validation, and payment webhooks.
 | [Add strict input validation to every endpoint](prompts/api-hardening/add-input-validation.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 | [Verify Stripe webhook signatures](prompts/api-hardening/verify-stripe-webhooks.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 
-### Release Gate
+### [Release Gate](prompts/release/README.md)
 
 The pre-deployment go/no-go check.
 
@@ -76,7 +74,7 @@ The pre-deployment go/no-go check.
 |---|---|---|
 | [Pre-deployment security go/no-go check](prompts/release/pre-deploy-security-check.md) | prompt | [10 Copy-Paste Security Prompts for Your AI Agent](https://composedsecurity.com/blog/10-security-prompts-for-vibe-coders) |
 
-### Prompt Injection & Agent Authorization
+### [Prompt Injection & Agent Authorization](prompts/prompt-injection/README.md)
 
 Stop untrusted text from becoming privileged action.
 
@@ -91,7 +89,7 @@ Stop untrusted text from becoming privileged action.
 | [Audit a support agent's privileged actions](prompts/prompt-injection/audit-privileged-agent-actions.md) | prompt | [Hackers asked Meta's AI for Instagram accounts. It said yes.](https://composedsecurity.com/blog/meta-ai-instagram-account-takeover) |
 | [Harden a support agent against privileged-action abuse](prompts/prompt-injection/harden-privileged-agent-actions.md) | prompt | [Hackers asked Meta's AI for Instagram accounts. It said yes.](https://composedsecurity.com/blog/meta-ai-instagram-account-takeover) |
 
-### Agent Runtime & Model Harnesses
+### [Agent Runtime & Model Harnesses](prompts/agent-runtime/README.md)
 
 Detect and contain emergent multi-agent behavior.
 
@@ -101,7 +99,7 @@ Detect and contain emergent multi-agent behavior.
 | [Audit a training harness for agent collaboration](prompts/agent-runtime/audit-training-harness.md) | prompt | [Agent takeover happened. By accident.](https://composedsecurity.com/blog/openai-ai-agents-huggingface-breach) |
 | [Incident response runbook for agent collectives](prompts/agent-runtime/ir-agent-collective.md) | prompt | [Agent takeover happened. By accident.](https://composedsecurity.com/blog/openai-ai-agents-huggingface-breach) |
 
-### Supply Chain & Incident Response
+### [Supply Chain & Incident Response](prompts/supply-chain/README.md)
 
 MCP, postinstall, registry, and cloud compromise playbooks.
 
@@ -133,7 +131,7 @@ prompts/
   supply-chain/
 ```
 
-Each file carries YAML frontmatter with its category, tags, and the blog post it came from. The prompt itself is always in a single fenced `text` block so it can be copied cleanly.
+Each file carries YAML frontmatter with its category, tags, and the blog post it came from. The prompt itself is always in a single fenced `text` block so it can be copied cleanly. Every category folder has its own README with the prompts it contains, the recommended order, and links back to the posts.
 
 ## Using these in your own work
 
