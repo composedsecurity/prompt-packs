@@ -1,5 +1,7 @@
 # Prompt Packs
 
+> The security prompts from the [Composed Security blog](https://composedsecurity.com/blog), kept here as copy-paste files. Every prompt links back to the post that explains the real-world failure it defends against.
+
 Battle-tested security prompts and detection commands for teams building software with AI coding agents.
 
 Every prompt in this repo is engineered for an agent: explicit scope, regex patterns, output format specs, and edge-case handling. They come from the write-ups on the [Composed Security blog](https://composedsecurity.com/blog), where each one ships with the story of the real-world failure it defends against.
